@@ -2,94 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5"/>
     <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <title>Interior Consultant</title>
+    <link rel="stylesheet" href="./Assets/css/index.css">
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <main class="main__container">
+      <nav class="nav__container">
+        <ul id="nav-list" class="nav__list">
+          <li class="items__list"><a href="">This Interior</a></li>
+          <li class="items__list">
+            <!-- active -->
+            <div href="#" id="icon-nav" onclick="burguerToX();" class="button-nav--toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+        </ul>
+        <div id="menu" class="displayNone items">
+          <ul class="nav__list2 ">
+            <li class="items__list close">
+              <div href="#" id="icon-nav" onclick="XtoBurger();" class="active">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </li>
+            <li class="items__list"><p>Hola</p></li>
+            <li class="items__list"><p>Hola</p></li>
+            <li class="items__list"><p>Hola</p></li>
+            <li class="items__list"><p>Hola</p></li>
+          </ul>
+        </div>
+      </nav>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+      <section id="content" class="Contenct__Container">
+          <div class="text">
+            <h1>Modern interior</h1>
+            <p class="little-text">A full-Service residential & <br> commercial interior design and <br> staging company offering <br> professional organizing & <br> eco-services.</p>
+            <div class="more">
+              <p class="more__text">Read more</p>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                <g fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                </g>
+              </svg>
+            </div>
+          </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+          <div class="second__container">
+            <img src="./Assets/img/photo1.png" alt="" class="img">
+          <div class="card">
+            <div class="person">
+              <img src="./Assets/img/photo2.png" alt="">
+              <div class="text__person">
+                <h1>Aliza Webber</h1>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <h2>Designed in 2020 by Aliza Webber</h2>
+          </div>
+          </div>
+          
+
+          <p class="footer">created by JonnierMartinez - devChallenges.io
+
+          </p>
+      </section>
+
+
+
+
+    </main>
+    <script src="./Assets/main.js"></script>
   </body>
 </html>

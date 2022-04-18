@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --black : #181719;
+    --withe : #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background: var(--black);
+    color: var(--withe);
+}
+.main__container{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+.nav__container{
+    margin-bottom: 2rem;
+}
+.nav__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+.items__list{
+    list-style: none;
+}
+.items__list a{
+    font-family: 'Crimson Pro';
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: var(--withe);
+    border: 1px solid var(--withe);
+    padding: .4rem;
+    position: relative;
+}
+.items__list div{
+    cursor: pointer;
+    padding-left: 1rem;
+}
+.items__list div span {
+    background-color: var(--withe);
+    display: block;
+    height: 2px;
+    left: 14px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    transition: .4s;
+    width: 20px;
+}
+.items__list .button-nav--toggle{
+    border: none;
+}
+.items__list .active{
+    border: none;
+}
+.displayNone{
+    display: none !important;
+}
+
+.items__list .button-nav--toggle span:first-child { 
+    transform: translateY(-6px) ;
+}
+.items__list .button-nav--toggle span:last-child { 
+    transform: translateY(6px) ;
+}
+.items__list .active span:first-child { 
+    transform: rotate(45deg) translate(0) ;
+}
+.items__list .active span:nth-child(2) { 
+    transform: scaleX(0) ;
+}
+.items__list .active span:last-child { 
+    transform: rotate(-45deg) translate(0)
+}
+.nav__list2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.items{
+    height: 89vh;
+}
+.nav__list2 .close{
+    position:absolute;
+    top: 2.8rem;
+    right: 3.5rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+.active{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+.button-nav--toggle{
+    position:absolute;
+    top: 2.8rem;
+    right: 3.5rem;
+    cursor: pointer;
+    padding: .5rem;
+    width: auto;
+    height: auto;
+}
+.items__list p{
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: .5s;
+}
+
+
+.more{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+.text h1{
+    font-family: Lora;
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 46px;
+}
+.text .little-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    min-width: 23.0rem;
+    margin: 2.5rem 0;
+}
+.text .more__text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    cursor: pointer;
+}
+.Contenct__Container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Contenct__Container .img{
+    object-fit: cover;  
+    width: 29.1rem;
+    position: absolute;
+}
+.card{
+    width: 25.0rem;
+    height: auto;
+    background: var(--black);
+    top: 50px;
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+.person{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.person img{
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.text__person h1{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text__person p{
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+}
+.card h2{
+    font-family: Lora;
+font-size: 18px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+padding: 1rem;
+}
+.footer{
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: center;
+position: fixed;
+bottom: 0; 
+padding: .5rem;
+background-color: var(--black);
+}
+@media screen and (min-width: 600px){
+    .Contenct__Container{
+        height: 80vh;
+        justify-content: space-around;
+    }
+    .Contenct__Container .img{
+        width: 50.1rem;
+    }
+    .second__container{
+        width: 50%;
+        padding: 10rem 0;
+    }
+    .text{
+        margin-right: 5rem;
+        padding: 18rem 0;
+    }
+
+}
