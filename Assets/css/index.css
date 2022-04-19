@@ -16,7 +16,7 @@ body{
     color: var(--withe);
 }
 .main__container{
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 2rem;
 }
@@ -24,11 +24,16 @@ body{
     margin-bottom: 2rem;
 }
 .nav__list{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     transition: .5s;
+    justify-content: flex-start;
+}
+.sub__list{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+
 }
 .items__list{
     list-style: none;
@@ -225,6 +230,9 @@ bottom: 0;
 padding: .5rem;
 background-color: var(--black);
 }
+.sub__list{
+    display: none;
+}
 @media screen and (min-width: 600px){
     .Contenct__Container{
         height: 80vh;
@@ -241,5 +249,13 @@ background-color: var(--black);
         margin-right: 5rem;
         padding: 18rem 0;
     }
-
+    .button-nav--toggle{
+        display: none;
+    }
+    .nav__list{
+        justify-content: space-evenly;
+    }
+    .sub__list{
+        display: flex;
+    }
 }
